@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>work08 html layout</title>
+<style>
+.container{
+    width:1000px;
+    margin:0 auto;
+
+}
+
+
+header{
+    background-image:url(images/header.jpg);
+    height:250px;
+}
+nva{
+    background-color:red;
+    float:left;
+    width:30%
+}
+article{
+    float:right;
+    background-color:green;
+    width:70%
+}
+section::after{
+    clear:left;
+    display:table;
+    content:"";
+}    
+footer{
+    background-color:purple;
+    height:80px;
+}
+
+a:link{
+    color:pink;
+    text-decoration:none;
+    background-color:yellow;
+    display:block;
+    width:100%px;
+    padding:5px;
+}
+a:visited{
+    color:blue;
+}
+a:hover{
+    color:red;
+    background-color:green;
+
+}
+a:active{
+    color:green;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+     <h1>ส่วนหัว</h1>
+</header>
+<section>
+<nva>
+        <ul style="list-style-type:none;>
+        <li><a href="">บ้านโป่ง</a></li>
+        <li><a href="">โพธาราม</a></li>
+        <li><a href="">บางแพ</a></li>
+        </ul>
+    </nav>
+    <article>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+    </article>
+</section>
+<footer>
+<h1>ส่วนท้าย</h1>
+</footer>
+
+
+
+
+</body>    
+<div class="container">
+</html>
